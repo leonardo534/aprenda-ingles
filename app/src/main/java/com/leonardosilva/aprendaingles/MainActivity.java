@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         smartTabLayout = findViewById(R.id.smartTabLayout);
         viewPager = findViewById(R.id.viewPager);
 
+        getSupportActionBar().setElevation(0);
+
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(),
                 FragmentPagerItems.with(this)
